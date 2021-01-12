@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="@color/placeholder_shimmer_background" />
+
+    <size
+        android:width="@dimen/placeholder_avatar_size"
+        android:height="@dimen/placeholder_avatar_size" />
+</shape>

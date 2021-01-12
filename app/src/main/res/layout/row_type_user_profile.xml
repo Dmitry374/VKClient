@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColorProfile"
+    android:paddingBottom="@dimen/profile_padding_bottom">
+
+    <ImageView
+        android:id="@+id/userProfileAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/small_margin"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/profile_name_text_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/userProfileAvatar"
+        app:layout_constraintTop_toTopOf="@+id/userProfileAvatar"
+        tools:text="Иван Иванов" />
+
+    <TextView
+        android:id="@+id/userProfileLastSeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/last_seen_margin"
+        android:text="@string/online"
+        android:textColor="@color/profile_detail_text_color"
+        android:textSize="@dimen/last_seen_text_size"
+        app:layout_constraintStart_toStartOf="@+id/userProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileName"
+        tools:text="@string/online" />
+
+    <ImageView
+        android:id="@+id/userProfileImageBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:src="@drawable/ic_birthday"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileAvatar" />
+
+    <TextView
+        android:id="@+id/userProfileBirthday"
+        style="@style/profile_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/userProfileImageBirthday"
+        app:layout_constraintStart_toEndOf="@+id/userProfileImageBirthday"
+        app:layout_constraintTop_toTopOf="@+id/userProfileImageBirthday"
+        tools:text="01.09.2002" />
+
+    <ImageView
+        android:id="@+id/userProfileImageCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:src="@drawable/ic_country"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileImageBirthday" />
+
+    <TextView
+        android:id="@+id/userProfileCountry"
+        style="@style/profile_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/userProfileImageCountry"
+        app:layout_constraintStart_toEndOf="@+id/userProfileImageCountry"
+        app:layout_constraintTop_toTopOf="@+id/userProfileImageCountry"
+        tools:text="Россия" />
+
+    <ImageView
+        android:id="@+id/userProfileImageCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:src="@drawable/ic_city"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileCountry" />
+
+    <TextView
+        android:id="@+id/userProfileCity"
+        style="@style/profile_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/userProfileImageCity"
+        app:layout_constraintStart_toEndOf="@+id/userProfileImageCity"
+        app:layout_constraintTop_toTopOf="@+id/userProfileImageCity"
+        tools:text="Москва" />
+
+    <ImageView
+        android:id="@+id/userProfileImageEducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:src="@drawable/ic_education"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileCity" />
+
+    <TextView
+        android:id="@+id/userProfileEducation"
+        style="@style/profile_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/userProfileImageEducation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userProfileImageEducation"
+        app:layout_constraintTop_toTopOf="@+id/userProfileImageEducation"
+        tools:text="Универ" />
+
+    <ImageView
+        android:id="@+id/userProfileImageFollowersCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:src="@drawable/ic_followers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileEducation" />
+
+    <TextView
+        android:id="@+id/userProfileFollowersCount"
+        style="@style/profile_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/userProfileImageFollowersCount"
+        app:layout_constraintStart_toEndOf="@+id/userProfileImageFollowersCount"
+        app:layout_constraintTop_toTopOf="@+id/userProfileImageFollowersCount"
+        tools:text="Подписчики" />
+
+    <View
+        android:id="@+id/userProfileDividerContacts"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/divider_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileFollowersCount" />
+
+    <TextView
+        android:id="@+id/userProfileContacts"
+        style="@style/profile_detail_color_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/profile_contact"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileDividerContacts"
+        tools:text="@string/profile_contact" />
+
+    <ImageView
+        android:id="@+id/userProfileImageDomain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:src="@drawable/ic_vk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileContacts" />
+
+    <TextView
+        android:id="@+id/userProfileDomain"
+        style="@style/profile_detail_color_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/userProfileImageDomain"
+        app:layout_constraintStart_toEndOf="@+id/userProfileImageDomain"
+        app:layout_constraintTop_toTopOf="@+id/userProfileImageDomain"
+        tools:text="domain" />
+
+    <View
+        android:id="@+id/userProfileDividerCareer"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/divider_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileDomain" />
+
+    <TextView
+        android:id="@+id/userProfileCareerTitle"
+        style="@style/profile_detail_color_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/profile_career_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileDividerCareer"
+        tools:text="@string/profile_career_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userProfileRecyclerCareer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileCareerTitle" />
+
+    <View
+        android:id="@+id/userProfileDividerEducation"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/divider_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileRecyclerCareer" />
+
+    <TextView
+        android:id="@+id/userProfileEducationTitle"
+        style="@style/profile_detail_color_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/profile_education_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileDividerEducation"
+        tools:text="@string/profile_education_title" />
+
+    <TextView
+        android:id="@+id/userProfileUniversityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/profile_university_title"
+        android:textColor="@color/profile_detail_text_color"
+        android:textSize="@dimen/profile_detail_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileEducationTitle"
+        tools:text="@string/profile_university_title" />
+
+    <TextView
+        android:id="@+id/userProfileEducationDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:text="@string/profile_university_title"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/profile_detail_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileUniversityTitle"
+        tools:text="@string/profile_university_title" />
+
+    <View
+        android:id="@+id/userProfileDividerPersonalInformation"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/divider_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileEducationDetail" />
+
+    <TextView
+        android:id="@+id/userProfilePersonalInformationTitle"
+        style="@style/profile_detail_color_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/profile_personal_information_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileDividerPersonalInformation"
+        tools:text="@string/profile_personal_information_title" />
+
+    <TextView
+        android:id="@+id/userProfileAboutMeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/profile_about_me"
+        android:textColor="@color/profile_detail_text_color"
+        android:textSize="@dimen/profile_detail_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfilePersonalInformationTitle"
+        tools:text="@string/profile_about_me" />
+
+    <TextView
+        android:id="@+id/userProfileAboutMeDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:text="@string/profile_about_me"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/profile_detail_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileAboutMeTitle"
+        tools:text="@string/profile_about_me" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

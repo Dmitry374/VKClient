@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="backgroundColorPost">#FFFFFF</color>
+    <color name="backgroundColorProfile">#FFFFFF</color>
+    <color name="backgroundColorMain">#ECEDF2</color>
+
+    <color name="headerDateBackgroundColor">#C8C8C8</color>
+
+    <color name="placeholder_shimmer_background">#dddddd</color>
+
+    <color name="profile_detail_text_color">#868f9a</color>
+
+    <color name="divider_color">#AEB9C6</color>
+</resources>

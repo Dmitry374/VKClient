@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding">
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/profile_detail_text_size"
+        tools:text="Завод" />
+
+    <TextView
+        android:id="@+id/workPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/career_title_margin"
+        android:textColor="@color/profile_detail_text_color"
+        android:textSize="@dimen/career_detail_text_size"
+        tools:text="с 2016-2019" />
+
+    <TextView
+        android:id="@+id/workPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/profile_detail_text_color"
+        android:textSize="@dimen/career_detail_text_size"
+        tools:text="программист" />
+
+    <TextView
+        android:id="@+id/workLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/profile_detail_text_color"
+        android:textSize="@dimen/career_detail_text_size"
+        tools:text="Россия, Москва" />
+
+</LinearLayout>

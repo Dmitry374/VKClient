@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="com.dima.vkclient.custom.PostWithTextAndImage">
+
+    <ImageView
+        android:id="@+id/communityAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/communityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/community_name_text_size"
+        android:textStyle="bold"
+        tools:text="@string/post_community_name" />
+
+    <TextView
+        android:id="@+id/postDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/post_date_text_size"
+        tools:text="@string/post_community_date" />
+
+    <TextView
+        android:id="@+id/postContentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/post_text_size"
+        tools:text="@string/post_community_text" />
+
+    <ImageView
+        android:id="@+id/postContentImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image" />
+
+    <TextView
+        android:id="@+id/likeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:drawablePadding="@dimen/padding_post_compound_drawable"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/post_text_size"
+        app:drawableStartCompat="@drawable/ic_liked"
+        tools:text="473" />
+
+    <TextView
+        android:id="@+id/commentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:drawablePadding="@dimen/padding_post_compound_drawable"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/post_text_size"
+        app:drawableStartCompat="@drawable/ic_comment"
+        tools:text="10" />
+
+    <TextView
+        android:id="@+id/shareCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:drawablePadding="@dimen/padding_post_compound_drawable"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/post_text_size"
+        app:drawableStartCompat="@drawable/ic_repost"
+        tools:text="1" />
+
+</merge>

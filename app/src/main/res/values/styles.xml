@@ -1,0 +1,36 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MainActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="header_date">
+        <item name="android:paddingLeft">@dimen/padding_header_x</item>
+        <item name="android:paddingRight">@dimen/padding_header_x</item>
+        <item name="android:paddingTop">@dimen/padding_header_y</item>
+        <item name="android:paddingBottom">@dimen/padding_header_y</item>
+        <item name="android:background">@drawable/header_date</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/header_date_text_size</item>
+    </style>
+
+    <style name="profile_detail">
+        <item name="android:textColor">@color/profile_detail_text_color</item>
+        <item name="android:textSize">@dimen/profile_detail_text_size</item>
+        <item name="android:layout_marginStart">@dimen/margin</item>
+    </style>
+
+    <style name="profile_detail_color_black" parent="profile_detail">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>

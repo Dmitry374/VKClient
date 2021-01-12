@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/commentAvatarUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/comment_user_name_text_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/commentAvatarUser"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Иванов Иван" />
+
+    <TextView
+        android:id="@+id/commentText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/comment_text_size"
+        app:layout_constraintEnd_toStartOf="@+id/commentLikes"
+        app:layout_constraintStart_toEndOf="@+id/commentAvatarUser"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        tools:text="Текст комментария" />
+
+    <TextView
+        android:id="@+id/commentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/padding_post_compound_drawable"
+        android:textSize="@dimen/comment_date_size"
+        app:layout_constraintStart_toEndOf="@+id/commentAvatarUser"
+        app:layout_constraintTop_toBottomOf="@+id/commentText"
+        tools:text="date" />
+
+    <TextView
+        android:id="@+id/commentLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:drawablePadding="@dimen/padding_post_compound_drawable"
+        android:textSize="@dimen/comment_like_size"
+        app:drawableStartCompat="@drawable/ic_not_liked_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="73" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

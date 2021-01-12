@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">VKClient</string>
+
+    <integer name="com_vk_sdk_AppId">7689455</integer>
+
+    <string name="post_community_name">Films Guide</string>
+    <string name="post_community_date">12 minutes ago</string>
+    <string name="post_community_text">Gladiator is a 2000 British-American epic historical drama film directed by Ridley Scott and written by David Franzoni, John Logan, and William Nicholson. Crowe portrays Roman general Maximus Decimus Meridius, who is betrayed when Commodus, the ambitious son of Emperor Marcus Aurelius, murders his father and seizes the throne.</string>
+
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+
+    <string name="news">Новости</string>
+    <string name="favourite">Избранное</string>
+    <string name="profile">Профиль</string>
+
+    <string name="transition_name_template">transitionImage%1$d</string>
+
+    <string name="error_loading_title">Ошибка</string>
+    <string name="error_loading_message">При обработке запроса произошла ошибка</string>
+    <string name="error_internet_connection">Ошибка Интерет соединения</string>
+    <string name="internet_connection_restored">Интернет соединение восстановлено</string>
+    <string name="server_not_available">Сервер недоступен\nПопробуйте позже</string>
+
+    <string name="image_saved">Изображение сохранено</string>
+    <string name="image_saved_error">Возникла ошибка при сохранении изображения</string>
+    <string name="error_share_image">Ошибка отправки изображения</string>
+    <string name="disabled_write_external_storage_permission">Вы отключили разрешение на запись во внешнее хранилище</string>
+
+    <string name="send_to">Send to</string>
+
+    <string name="post_detail">Запись на стене</string>
+    <string name="comment">Комментарий</string>
+    <string name="error_create_comment">Ошибка создания комментария</string>
+    <string name="send">Send</string>
+
+    <string name="two_word">%1$s %2$s</string>
+
+    <string name="online">online</string>
+    <string name="last_seen">Был в сети %1$s</string>
+    <string name="profile_date_of_birth">День рождения: %1$s</string>
+    <string name="profile_city">Город: %1$s</string>
+    <string name="profile_country">Страна: %1$s</string>
+    <string name="profile_contact">Контакты</string>
+    <string name="profile_career_title">Карьера</string>
+    <string name="profile_education_title">Образование</string>
+    <string name="profile_university_title">Вуз</string>
+    <string name="profile_career_work_period">%1$d-%2$d</string>
+    <string name="profile_career_work_since">с %1$d г.</string>
+    <string name="profile_career_work_location">%1$s, %2$s</string>
+    <string name="profile_personal_information_title">Личная информация</string>
+    <string name="profile_about_me">О себе</string>
+
+    <plurals name="profile_followers_count">
+        <item quantity="zero">нет подписчиков</item>
+        <item quantity="one">%1$d подписчик</item>
+        <item quantity="two">%1$d подписчика</item>
+        <item quantity="few">%1$d подписчика</item>
+        <item quantity="many">%1$d подписчиков</item>
+        <item quantity="other">%1$d подписчиков</item>
+    </plurals>
+
+    <string name="create_post">Новая запись</string>
+    <string name="create_post_hint">Что у вас нового?</string>
+</resources>

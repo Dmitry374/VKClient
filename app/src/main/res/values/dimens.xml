@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <dimen name="padding_post_compound_drawable">5dp</dimen>
+
+    <dimen name="community_name_text_size">16sp</dimen>
+    <dimen name="post_date_text_size">14sp</dimen>
+    <dimen name="post_text_size">16sp</dimen>
+
+    <dimen name="community_name_detail_text_size">20sp</dimen>
+    <dimen name="post_detail_text_size">18sp</dimen>
+    <dimen name="padding_post_detail_text">16dp</dimen>
+
+    <dimen name="text_size_flex_box">20sp</dimen>
+
+    <dimen name="margin_between_posts">10dp</dimen>
+
+    <!--  Header in RecyclerView  -->
+    <dimen name="padding_item_decoration">7dp</dimen>
+    <dimen name="padding_header_x">15dp</dimen>
+    <dimen name="padding_header_y">4dp</dimen>
+    <dimen name="header_date_text_size">17sp</dimen>
+    <dimen name="header_date_radius">20dp</dimen>
+
+    <!--  Shimmer item placeholder  -->
+    <dimen name="placeholder_image_size">50dp</dimen>
+    <dimen name="placeholder_title_width">150dp</dimen>
+    <dimen name="placeholder_title_height">10dp</dimen>
+    <dimen name="placeholder_subtitle_width">100dp</dimen>
+    <dimen name="placeholder_subtitle_height">8dp</dimen>
+
+    <dimen name="placeholder_content_text_height">8dp</dimen>
+    <dimen name="placeholder_content_text_margin_top">10dp</dimen>
+
+    <dimen name="placeholder_text1_margin_top">20dp</dimen>
+    <dimen name="placeholder_text1_margin_end">100dp</dimen>
+    <dimen name="placeholder_text2_margin_end">50dp</dimen>
+    <dimen name="placeholder_text3_margin_end">160dp</dimen>
+
+    <dimen name="placeholder_padding_bottom">40dp</dimen>
+
+    <dimen name="placeholder_avatar_size">70dp</dimen>
+    <dimen name="placeholder_profile_title_height">15dp</dimen>
+    <dimen name="placeholder_profile_content_text_margin_top">12dp</dimen>
+    <dimen name="placeholder_profile_text1_margin_end">150dp</dimen>
+    <dimen name="placeholder_profile_text2_margin_end">45dp</dimen>
+    <dimen name="placeholder_profile_text3_margin_end">55dp</dimen>
+    <dimen name="placeholder_profile_text4_margin_end">170dp</dimen>
+    <dimen name="placeholder_profile_text5_margin_end">100dp</dimen>
+
+    <!--  Server error layout  -->
+    <dimen name="image_error_server_size">60dp</dimen>
+    <dimen name="text_error_server_size">18sp</dimen>
+
+    <dimen name="margin_load_image">30dp</dimen>
+
+    <!-- Comments -->
+    <dimen name="comment_user_name_text_size">14sp</dimen>
+    <dimen name="comment_text_size">14sp</dimen>
+    <dimen name="comment_date_size">14sp</dimen>
+    <dimen name="comment_like_size">12sp</dimen>
+
+    <dimen name="margin_between_comments">5dp</dimen>
+    <dimen name="margin_comment_input">10dp</dimen>
+    <dimen name="input_comment_elevation">8dp</dimen>
+
+    <!--  Profile  -->
+    <dimen name="profile_name_text_size">19sp</dimen>
+    <dimen name="last_seen_text_size">14sp</dimen>
+    <dimen name="profile_detail_text_size">15sp</dimen>
+    <dimen name="profile_detail_margin">8dp</dimen>
+    <dimen name="profile_padding_bottom">20dp</dimen>
+
+    <dimen name="create_post_text_size">20sp</dimen>
+
+    <dimen name="career_title_margin">5dp</dimen>
+    <dimen name="last_seen_margin">3dp</dimen>
+    <dimen name="career_detail_text_size">14sp</dimen>
+
+</resources>
